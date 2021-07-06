@@ -1,0 +1,47 @@
+<html>
+<head>
+	<title>if</title>
+</head>
+<body>
+	<div id="output"></div>
+	<script type="text/javascript">
+		var eligible = prompt('age of person');
+		var output = document.getElementById('output');
+		//var age = 15
+		if (eligible >= 18) {
+			output.innerHTML = 'eligible to vote' + " " +eligible;
+		}else {
+			output.innerHTML = 'not eligible to vote' + " " + eligible;
+		}
+	</script>
+
+	<div id="array">statements</div>
+
+	<script type="text/javascript">
+		var usernames = ['mike', 'rohan', 'mango', 'shahoo'];
+		var input = prompt('what is your name');
+		var output = document.getElementById('output');
+		var htmloutput = '';
+		if (usernames.indexOf(input)>-1) {
+			htmloutput='welcome it is true';
+			var age = prompt('age');
+			htmloutput += age>18? 'you are over 18' : 'you are not 18';
+		}else{
+			htmloutput = 'denied was not true';
+		}
+		array.innerHTML = htmloutput+','+input;
+	</script>
+
+	<div id="prime">numbers</div>
+	<script type="text/javascript">
+		var inputs = prompt('number');
+		var prime = document.getElementById('prime');
+		var htmlstate = '';
+		if (inputs%2){
+			prime.innerHTML="it's prime"
+		}else{
+			prime.innerHTML="it's not prime"
+		}
+	</script>
+</body>
+</html>
