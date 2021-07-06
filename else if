@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>ELSE IF</title>
+</head>
+<body>
+	<div id="timing">Else if</div>
+
+	<script type="text/javascript">
+		
+		var timing = document.getElementById('timing');
+		var time = 24;
+		if(time<=12){
+			timing.innerHTML = 'Morning';
+		}else if(time>=13 && time<=15){
+			timing.innerHTML = 'Afternoon'
+		}else if(time>=15 && time<=18){
+			timing.innerHTML = 'Evening';
+		}else if(time>18 && time<=22){
+			timing.innerHTML = 'Night';
+		}else if(time>=22 && time==24){
+			timing.innerHTML = 'sleeping time';
+		}
+	</script>
+</body>
+</html>
