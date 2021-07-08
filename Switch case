@@ -25,6 +25,9 @@
         }
         
         output.innerHTML = html;
+	
+	////////////////////////////////////
+	
 	</script>
 	<div id="get">rope</div>
 	<script type="text/javascript">
@@ -47,6 +50,10 @@
 		}
 
 		output.innerHTML = hhh;
+		
+		///////////////////////////
+		
+		
 	</script>
   <div id="meat">mamsam</div>
 	<script type="text/javascript">
@@ -70,6 +77,9 @@
 
 		meat.innerHTML = kg;
 	</script>
+	
+	//////////////////////////////////
+	
   <div id="guna">run</div>
 	<script type="text/javascript">
 		var guna = document.getElementById('guna');
