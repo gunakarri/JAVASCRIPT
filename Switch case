@@ -1,0 +1,100 @@
+<html>
+<head>
+	<title>switch</title>
+</head>
+<body>
+	<div id="output">switch state</div>
+
+	<script type="text/javascript">
+		var myTime = prompt("What are you doing?");
+        var output = document.getElementById("output");
+        var html;
+        
+        switch (myTime) {
+            case "Get Up":
+                html = "8:00AM";
+                break;
+            case "Lunch":
+                html ="12:00PM";
+                break;
+            case "Dinner":
+                html ="6:00PM";
+                break;
+            default:
+                html = "Not found";
+        }
+        
+        output.innerHTML = html;
+	</script>
+	<div id="get">rope</div>
+	<script type="text/javascript">
+		var get = document.getElementById('get');
+		var time = prompt('what is time');
+		var html;
+
+		switch (time) {
+			case 'wake up sid':
+			   html = '8:00AM';
+			   break;
+			case 'ready to lunch sid':
+			   html = '12:00PM';
+			   break;
+			case 'dinner time sid':
+			   html = '7:00PM';
+			   break;
+			default:
+			   html = 'nothing to do';
+		}
+
+		output.innerHTML = hhh;
+	</script>
+  <div id="meat">mamsam</div>
+	<script type="text/javascript">
+		var meat = document.getElementById('meat');
+		var price = 4;
+		var kg;
+
+		switch(price){
+			case 1:
+			   kg = 700;
+			   break;
+			case 2:
+			    kg = 1400;
+			    break;
+			case 3:
+			    kg = 2100;
+			    break;
+			case 4:
+			    kg = 2800;
+		}
+
+		meat.innerHTML = kg;
+	</script>
+  <div id="guna">run</div>
+	<script type="text/javascript">
+		var guna = document.getElementById('guna');
+		var sekhar = prompt()
+		var karri = "something went wrong"; 
+		var randomNumber = Math.floor(Math.random()*6);
+		switch(randomNumber){
+			case 0:
+			   sekhar = "date of birth";
+			   break;
+			case 1:
+			    sekhar = "Address";
+			    break;
+			case 2:
+			    sekhar = "Bio data";
+			    break;
+			case 3:
+			    sekhar = "javascript";
+			    break;
+			default:
+			    sekhar = "i dont't know";
+		}
+		guna.innerHTML = "ask me" + sekhar;
+	</script>
+
+
+</body>
+</html>
