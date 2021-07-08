@@ -1,0 +1,34 @@
+	<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="prime"></div>
+	<script type="text/javascript">
+		var prime = document.getElementById('prime');
+		var num = prompt('how many even numbers do u want');
+
+		var x = 5;
+		while(x < num){
+			prime.innerHTML += 'value of x='+x+'<br>'
+			x++;
+		};	
+	</script>
+
+	<br>
+	<br>
+	<br>
+	
+	<div id="text"></div>
+	<script type="text/javascript">
+		var text = document.getElementById('text');
+		var secret = 'dark';
+		var crackcode = prompt('what is the secret word?');
+		while(crackcode != secret){
+			crackcode = prompt('guess again!');
+		}
+
+		text.innerHTML += 'got it';
+	</script>
+</body>
+</html>
