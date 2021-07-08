@@ -1,0 +1,60 @@
+<html>
+<head>
+	<title>random game</title>
+</head>
+<body>
+	<div id="game"></div>
+	<script type="text/javascript">
+		var game = prompt('rock,paper,scissor');
+		var player = Math.random();
+		if(player < 0.35){
+			player = 'rock';
+		}else if(player < 0.65){
+			player = 'paper';
+		}else{
+			player = 'scissor';
+		}
+		document.write(player);
+		// var ps = game.charAt(0).touppercase()
+		// console.log(game)
+
+		var compare = function(choice1, choice2){
+			if(choice1 === choice2){
+				return 'who win';
+			}
+			if(choice1 === 'rock'){
+				if(choice2 === 'paper'){
+					return 'you win';
+				}else{
+					return 'you loose! try again';
+				}
+			}
+			if(choice1 === 'paper'){
+				if(choice2 === 'scissor'){
+					return 'you loose';
+				}else{
+					return 'you loose! try again';
+				}
+			}
+			if(choice1 === 'rock'){
+				if(choice2 === 'paper'){
+					return 'you win'
+				}else{
+					return 'you loose! try again';
+				}
+			}
+			if(choice1 === 'rock'){
+				if(choice2 === 'scissor'){
+					return 'you win';
+				}else{
+					return 'you loose! try again';
+				}
+			}
+		}
+
+		var results = compare(game,start);
+
+
+	</script>
+</body>
+</html>
