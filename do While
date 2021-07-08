@@ -1,0 +1,56 @@
+<html>
+<head>
+	<title>Do Loop</title>
+</head>
+<body>
+	<div id="LOOP"></div>
+	<script type="text/javascript">
+		var LOOP = document.getElementById('LOOP');
+
+		var x = -1;
+		do{
+			x++;
+			LOOP.innerHTML+='Value of x = '+x+'<br>';
+		}
+
+		while(x < 9);
+	</script>
+  
+<br>
+<br>
+<br>
+
+	<div id="Paop"></div>
+	<script type="text/javascript">
+		var Paop = document.getElementById('Paop');
+
+		var y = 0;
+		do{
+			y++;
+			Paop.innerHTML+= 'value of y -'+y+'<br>'
+		} 
+		while(y < 9);
+	</script>
+  
+<br>
+<br>
+<br>
+
+	<div id="axis"></div>
+	<script type="text/javascript">
+		var axis = document.getElementById('axis');
+
+		var z = 0;
+
+		do{
+			if(z%2===0){;
+			axis.innerHTML+= 'value of z ='+z+'<br>'
+		    }
+		    z++
+		}
+		while(z<9);
+		axis.innerHTML+= 'final value of x'+x+'<br>';
+	</script>
+	<br>
+</body>
+</html>
