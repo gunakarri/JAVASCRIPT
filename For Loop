@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title>For loop</title>
+</head>
+<body>
+	<div id="output"></div>
+
+	<script type="text/javascript">
+		var output = document.getElementById('output');
+
+		for(var x = 0; x<=16;x++){
+			if(x%2===0){
+				output.innerHTML += 'value of x = '+ x + '<br>'; 
+			}
+			
+		}
+	</script>
+
+	<div id="id"></div>
+	<script type="text/javascript">
+		var id = document.getElementById('id');
+		var total = 0;
+		var bananas = prompt('how many bananas u need');
+		var bananascalories = 105;
+
+		for(var x = 1; x<=bananas;x++){
+			total+=bananascalories;
+			output.innerHTML+='you ate '+x+' banana another'+bananascalories+'calories your total is now'+x+'<br>';
+		}
+		output.innerHTML+='your total calories count is'+total;
+ 	</script>
+ 	<div id="teddy"></div>
+ 	<script type="text/javascript">
+ 		var teddy = document.getElementById('teddy');
+ 		var all = 0;
+ 		var banana = prompt('i want to known the calories i ate now');
+ 		var calories = 90;
+
+ 		for(y = 1; y<=banana;y++){
+ 			all+=calories;
+ 			output.innerHTML+='banana i ate'+calories+'i want to known'+all+'<br>';
+ 		}
+ 		output.innerHTML+='you ate'+all;
+ 	</script>
+ 	
+
+</body>
+</html>
