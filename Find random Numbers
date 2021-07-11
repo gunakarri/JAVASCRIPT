@@ -1,0 +1,38 @@
+<button onclick="myFun()">click here</button>
+	<script>
+
+		var names = ['social','science','man']
+		var output = document.getElementById('output');
+		function myFun(){
+			var about = prompt('what about u?');
+			var randomKle = Math.floor(Math.random()*names.length);
+			output.innerHTML +=names[randomKle]+" "+about+"<br>";
+			alert('randomKle')
+		}
+
+	</script>
+	<br>
+	<button onclick="myotionFun()">clickhere</button>
+	<br>
+	<br>
+	<script>
+		var data = ['board:','switch:','fruit:','bird:']
+		var output = document.getElementById('output');
+		function myotionFun(){
+			var english = prompt('need datas');
+			var meme = Math.floor(Math.random()*data.length);
+			output.innerHTML+=data[meme]+" "+english+'<br>';
+			alert('guna');
+		}
+	</script>
+	<br>
+	<button onclick="chair()">click fun</button>
+	<script>
+		var respo = ['run','room','ram','rose'];
+		var output = document.getElementById('output');
+		function chair(){
+			var Rwords = prompt('find alphabets?');
+			var fun = Math.floor(Math.random()*respo.length);
+			output.innerHTML+=respo[fun]+" "+Rwords+'<br>';
+ 		}
+	</script>
