@@ -1,0 +1,121 @@
+<html>
+<head>
+	<title>calculator</title>
+</head>
+<body>
+	<div id="output"></div>
+	First: <input type="text" id="col1">
+	Second: <input type="text" id="col2">
+	<br>
+	<input type="button" onclick="add()" Value="Add">
+	<input type="button" onclick="sub()" Value="subt">
+	<input type="button" onclick="mul()" Value="multi">
+
+
+	<script>
+		var output = document.getElementById('output');
+		var col1 = document.getElementById('col1');
+		var col2 = document.getElementById('col2');
+
+		function add(){
+			var a = Number(col1.value);
+			var b = "+";
+			var c = Number(col2.value);
+			var d = a + c;
+			alldata(a,b,c,d);
+		}
+
+		function sub(){
+			var a = Number(col1.value);
+			var b = "-";
+			var c = Number(col2.value);
+			var d = a - c;
+			alldata(a,b,c,d);
+		}
+
+		function mul(){
+			var a = Number(col1.value);
+			var b = "X";
+			var c = Number(col2.value);
+			var d = a * c;
+			alldata(a,b,c,d);
+		}
+
+		function alldata(a,b,c,d){
+			output.innerHTML += a + " " + b + " " + c + '=' + d + "<br>" 
+		}
+	</script>
+	<br>
+	<br>
+	<br>
+	<div id="strenght"></div>
+	First: <input type="text" id="vol1">
+	Second: <input type="text" id="vol2">
+	<br>
+	<input type="button" onclick="comAdd()" Value="Add">
+	<input type="button" onclick="comSub()" Value="Sub">
+	<input type="button" onclick="comMul()" Value="Mul">
+	<input type="button" onclick="comDiv()" Value="Div">
+	<input type="button" onclick="comMod()" Value="Mod">
+
+	<script>
+		var strenght = document.getElementById('strenght')
+		var vol1 = document.getElementById('vol1');
+		var vol2 = document.getElementById('vol2');
+
+		function comAdd(){
+			var x = vol1.value + "+" + vol2.value;
+			var y = Number(vol1.value) + Number(vol2.value)
+			//var z = x + y;
+			data(x,y);
+		}
+
+		function comSub(){
+			var x = vol1.value + "-" + vol2.value;
+			var y = Number(vol1.value) - Number(vol2.value)
+			//var z = x + y;
+			data(x,y);
+
+		}
+
+		function comMul(){
+			var x = vol1.value + "X" + vol2.value;
+			var y = Number(vol1.value) * Number(vol2.value)
+			//var z = x + y;
+			data(x,y);
+
+		}
+
+		function comDiv(){
+			var x = vol1.value + "/" + vol2.value;
+			var y = Number(vol1.value) / Number(vol2.value)
+			//var z = x + y;
+			data(x,y);
+
+		}
+
+		function comMod(){
+			var x = vol1.value + "%" + vol2.value;
+			var y = Number(vol1.value) % Number(vol2.value)
+			//var z = x + y;
+			data(x,y);
+
+		}
+
+
+		function data(x,y){
+			strenght.innerHTML += x + "=" + y + '<br>';
+		}
+	</script>
+
+	<script>
+		var num1 = parseInt(prompt('Enter the number 1'));
+		var num2 = parseInt(prompt('Enter the Number 2'));
+
+		var Adding = num1 % num2;
+		output.innerHTML += Adding;
+	</script>
+
+
+</body>
+</html>
