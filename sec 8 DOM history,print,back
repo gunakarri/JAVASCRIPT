@@ -1,0 +1,70 @@
+<html>
+<head>
+    <title>javascript</title>
+</head>
+<body>
+    <div id="wrapper"></div>
+    <a href="goat.html">goat</a>
+    <a href="call.html">call</a>
+    <a href="back1.html">back1</a>
+    
+    <input type="button" onclick="goBack()" value="Back">
+    <input type="button" onclick="prompt('hello master')" value="prompt">
+    <input type="button" onclick="alert('print')" value="Alert">
+
+    <script type="text/javascript">
+        
+        var output = document.getElementById('wrapper');
+
+        function goBack(){
+            window.history.go(-1);
+        }
+
+    </script>
+
+    <div id="wrapper">page 1</div>
+    <a href="goat.html">goat</a>
+    <a href="call.html">call</a>
+    <a href="back1.html">back1</a>
+    
+    <input type="button" onclick="print()" value="print">
+ 
+ <script type="text/javascript">
+     var output = document.getElementById('wrapper');
+
+        function goBack(){
+            window.history.go(-1);
+        }
+        
+ </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>jss</title>
+</head>
+<body>
+    <div id="wrapper">page2</div>
+    <a href="sekhar.html">sekhar</a>
+    <a href="gun.html">gun</a>
+    <a href="htm.html">html</a>
+    <a href="raki.html">raki</a>
+    <button onclick="step()">back</button>
+    <button onclick="alert('ro corona')">alert</button>
+    <button onclick="prompt('your name')">prompt</button>
+
+    <script type="text/javascript">
+        // var output = document.getElementById('wrapper');
+
+        // function step(){
+        //     window.history.go(-1);
+        // }
+    </script>
+
+    
+
+</body>
+</html>
