@@ -25,27 +25,40 @@
 			alert('welcome to my page');
 		}
 	</script>
-
-	<div id="wrapper">page2</div>
-	<!-- <a href="fff.html">fff</a> -->
-	<input type="button" onclick="starInt()" value="start">
-	<input type="button" onclick="clearInt()" value="stop">
+</body>
+</html>
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+(((((((((((((((((((((((((((update wrapper)))))))))))))))))))))))))))
+<html>
+<head>
+	<title>tytyty</title>
+</head>
+<body>
+	<div id="wrapper">my page</div>
+	<button onclick="startInt()">start</button>
+	<button onclick="clearInt()">stop</button>
 	<script type="text/javascript">
 		var output = document.getElementById('wrapper');
 
-		var docTimer;
-		function starInt(){
-			mypopup();
-			docTimer = window.setTimeout(startInt,120);
-			}
+		window.setTimeout(updateWrapper,3330)
+		var startRun;
+
+		function startInt(){
+			myPopup();
+			startRun = window.setTimeout(startInt,13452);
+		}
+
+		function updateWrapper(){
+			document.getElementById('wrapper').innerHTML = 'welcome to my onboard pages';
+		}
 
 		function clearInt(){
-				window.clearInterval(docTimer)
-			}
+			window.clearInterval(startRun)
+		}
 
-		function mypopup(){
-				alert('eee');
-			}
+		function myPopup(){
+			prompt('who are you?');
+		}
 	</script>
 </body>
 </html>
