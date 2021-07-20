@@ -1,0 +1,51 @@
+<html>
+<head>
+	<title>set time out</title>
+</head>
+<body>
+	<div id="wrapper">page1</div>
+	<!-- <a href="fff.html">fff</a> -->
+	<input type="button" onclick="startInt()" value="start">
+	<input type="button" onclick="clearInt()" value="stop">
+	<script type="text/javascript">
+		
+		var output = document.getElementById('wrapper');
+
+		var setTimer;
+		function startInt(){
+			myPopup();
+			setTimer = window.setTimeout(startInt, 1500);
+		}
+
+		function clearInt(){
+			window.clearInterval(setTimer)
+		}
+
+		function mypopup(){
+			alert('welcome to my page');
+		}
+	</script>
+
+	<div id="wrapper">page2</div>
+	<!-- <a href="fff.html">fff</a> -->
+	<input type="button" onclick="starInt()" value="start">
+	<input type="button" onclick="clearInt()" value="stop">
+	<script type="text/javascript">
+		var output = document.getElementById('wrapper');
+
+		var docTimer;
+		function starInt(){
+			mypopup();
+			docTimer = window.setTimeout(startInt,120);
+			}
+
+		function clearInt(){
+				window.clearInterval(docTimer)
+			}
+
+		function mypopup(){
+				alert('eee');
+			}
+	</script>
+</body>
+</html>
