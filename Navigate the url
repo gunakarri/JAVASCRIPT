@@ -1,0 +1,47 @@
+<html>
+<head>
+	<title>Navigate the url</title>
+</head>
+<body>
+	<div id="output">page 1</div>
+	<input type="text" id="url" name="url" value="http://www.google.com">
+
+	<button onclick="goUrl()">click here</button>
+	<button onclick="goUrl()">Back</button>
+	<button onclick="goUrl()">Forward</button>
+	<script>
+		var output = document.getElementById('output');
+		function goUrl(){
+			var url = document.getElementById('url').value;
+			window.location = url;
+		}
+	</script>
+</body>
+</html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>URL</title>
+</head>
+<body>
+	<div id="wrapper"></div>
+	
+	<input type="text" id="UrL" name="UrL" value="https://www.veltech.edu.in/">
+	<button onclick="myUrl()">Front</button>
+	
+
+	<script type="text/javascript">
+		var output = document.getElementById('wrapper');
+
+		function myUrl(){
+			var UrL = document.getElementById('UrL').value;
+			window.location = UrL;
+		}
+
+		// function myValue(){
+		// 	document.getElementById('wrapper').innerHTML = document.myForm.url.value;
+		// }
+	</script>
+</body>
+</html>
