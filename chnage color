@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<style type="text/css">
+	p{
+		font-size: 30px;
+	}
+	div{
+		text-align: center;
+		border: 1px solid blueviolet;
+	}
+	body
+	{
+		background-color: navy;
+	}
+</style>
+<body>
+	<div>
+		<p id="r">How to Change Text Color Onclick in Javascript change color on Click</p>
+
+		<button style="background-color: red;" onclick="red()">red</button>
+		<button style="background-color: greenyellow;" onclick="greenyellow()">greenyellow</button>
+		<button style="background-color: gold;" onclick="gold()">gold</button>
+		<button style="background-color: orange;" onclick="orange()">orange</button>
+		<button style="background-color: yellow;" onclick="yellow()">yellow</button>
+
+		<script type="text/javascript">
+			function red()
+			{
+				document.getElementById("r").style.color="red";
+			}
+			function greenyellow()
+			{
+				document.getElementById("r").style.color="greenyellow";
+			}
+			function gold()
+			{
+				document.getElementById("r").style.color="gold";
+			}
+			function orange()
+			{
+				document.getElementById("r").style.color="orange";
+			}
+			function yellow()
+			{
+				document.getElementById("r").style.color="yellow";
+			}
+		</script>
+	</div>
+
+</body>
+</html>
